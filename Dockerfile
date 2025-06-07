@@ -1,5 +1,4 @@
 FROM eclipse-temurin:21-jdk-alpine
-ENV PORT=8080
-EXPOSE ${PORT}
+EXPOSE 8080
 ADD quizify-backend.jar app.jar
-ENTRYPOINT [ "java", "-jar", "-Dserver.port=${PORT}", "/app.jar" ]
+ENTRYPOINT [ "java", "-jar", "/app.jar" ]

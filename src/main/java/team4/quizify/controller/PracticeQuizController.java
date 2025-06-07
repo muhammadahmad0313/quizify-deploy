@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/Quizify")
-@CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
+@CrossOrigin(origins = "*", allowCredentials = "true")
 public class PracticeQuizController {
     @Autowired
     private PracticeQuizFactory practiceQuizFactory;

@@ -19,7 +19,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/Quizify/reports")
-@CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
+@CrossOrigin(origins = "*", allowCredentials = "true")
 public class ReportController {
     @Autowired
     private ReportFactoryProducer reportFactoryProducer;

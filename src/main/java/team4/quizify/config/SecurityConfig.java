@@ -16,9 +16,12 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
+            .cors(withDefaults())  // Enable CORS
             .csrf(csrf -> csrf.disable())  // Disable CSRF protection for API endpoints
             .authorizeHttpRequests(authz -> authz
-                .requestMatchers(new AntPathRequestMatcher("/**")).permitAll() // Allow all requests for now
+                .requestMatchers(new AntPathRequestMatcher("/Quizify/login")).permitAll()
+                .requestMatchers(new AntPathRequestMatcher("/Quizify/**")).permitAll()
+                .requestMatchers(new AntPathRequestMatcher("/**")).permitAll()
             )
             .sessionManagement(session -> session
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)

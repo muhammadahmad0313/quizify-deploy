@@ -28,7 +28,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-@CrossOrigin(origins = "*", allowCredentials = "true")
+@CrossOrigin(origins = "https://quizify-sigma.vercel.app", allowCredentials = "true")
 @RestController
 @RequestMapping("/Quizify/admin")
 public class AdminController {

@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/Quizify")
-@CrossOrigin(origins = "*", allowCredentials = "true")
+@CrossOrigin(origins = "https://quizify-sigma.vercel.app", allowCredentials = "true")
 public class PracticeQuizController {
     @Autowired
     private PracticeQuizFactory practiceQuizFactory;

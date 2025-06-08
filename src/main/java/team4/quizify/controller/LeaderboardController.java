@@ -11,7 +11,7 @@ import team4.quizify.service.LeaderboardService;
 import java.util.List;
 import java.util.Map;
 
-@CrossOrigin(origins = "", allowCredentials = "true")
+@CrossOrigin(origins = "https://quizify-sigma.vercel.app", allowCredentials = "true")
 @RestController
 @RequestMapping("/Quizify")
 public class LeaderboardController {

@@ -15,7 +15,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/Quizify/user")
-@CrossOrigin(origins = "*", allowCredentials = "true")
+@CrossOrigin(origins = "https://quizify-sigma.vercel.app", allowCredentials = "true")
 public class UserController {
 
     @Autowired

@@ -13,7 +13,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/Quizify/scores")
-@CrossOrigin(origins = "*", allowCredentials = "true")
+@CrossOrigin(origins = "https://quizify-sigma.vercel.app", allowCredentials = "true")
 public class ScoreController {
 
     @Autowired

@@ -19,7 +19,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/Quizify/reports")
-@CrossOrigin(origins = "*", allowCredentials = "true")
+@CrossOrigin(origins = "https://quizify-sigma.vercel.app", allowCredentials = "true")
 public class ReportController {
     @Autowired
     private ReportFactoryProducer reportFactoryProducer;

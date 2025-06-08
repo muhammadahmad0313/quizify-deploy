@@ -14,7 +14,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/Quizify/questions")
-@CrossOrigin(origins = "*", allowCredentials = "true")
+@CrossOrigin(origins = "https://quizify-sigma.vercel.app", allowCredentials = "true")
 public class QuestionController {
 
     private final QuestionService questionService;
